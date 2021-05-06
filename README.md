@@ -52,7 +52,7 @@ A estrutura do projeto conta com um diretório chamado `source/` onde estão tod
 Para executar o build e gerar os binários do projeto sem muitas complicações foi implementado um arquivo `makefile`. Tivemos como base esta [documentação](https://www.gnu.org/software/make/manual/make.html). Nesse arquivo existem dois métodos, são:
 - `make all`: esse método executa as instruções para compilação e gera os binários e o executável do projeto. Para executar basta estar no diretório que esta o `makefile` e digitar make all conforme abaixo.
 
-```Shell
+	```Shell
 	# User@Computer .../sistemaControle
 	$ make all
 	Building target using GCC compiler: source/data.cpp
@@ -73,12 +73,13 @@ Para executar o build e gerar os binários do projeto sem muitas complicações 
 	Building binary using GCC linker: sistemaControle
 	g++ objects/data.o objects/empresa.o objects/jogador.o objects/main.o objects/time.o -o sistemaControle
 	Finished building binary: sistemaControle
-```
+	```
 
 
 - `make clean`:
 
 	```Shell
 	# User@Computer .../sistemaControle
+	$ make clean
 
 	```
