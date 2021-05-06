@@ -7,7 +7,7 @@ Jogador::Jogador(){}
 Jogador::Jogador(string nome, Data nascimento, string nacionalidade, Categorias categoria, float salarioBruto){
 	this->nome = nome;
 	this->id = gerarIdJogador();
-	this->dataNascimento = nascimento
+	this->dataNascimento = nascimento;
 	this->nacionalidade = nacionalidade;
 	this->categoria = categoria;
 	this->salarioBruto = salarioBruto;
