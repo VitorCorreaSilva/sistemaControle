@@ -50,7 +50,7 @@ A estrutura do projeto conta com um diretório chamado `source/` onde estão tod
 
 ## O Build
 Para executar o build e gerar os binários do projeto sem muitas complicações foi implementado um arquivo `makefile`. Tivemos como base esta [documentação](https://www.gnu.org/software/make/manual/make.html). Nesse arquivo existem dois métodos, são:
-- `make all`: esse método executa as instruções para compilação e gera os binários e o executável do projeto. Para executar basta estar no diretório que esta o `makefile` e digitar make all conforme abaixo.
+- `make all`: esse método executa as instruções para compilação e gera os binários e o executável do projeto. Para executar basta estar no mesmo diretório do arquivo `makefile` e digitar make all conforme abaixo. 
 
 	```Shell
 	# User@Computer .../sistemaControle
@@ -73,6 +73,32 @@ Para executar o build e gerar os binários do projeto sem muitas complicações 
 	Building binary using GCC linker: sistemaControle
 	g++ objects/data.o objects/empresa.o objects/jogador.o objects/main.o objects/time.o -o sistemaControle
 	Finished building binary: sistemaControle
+	```
+
+
+Se algum erro de compilação acontecer o gcc informará o arquivo a linha e coluna onde o erro aconteceu e qual foi o erro. Nesse caso o erro esta na linha 10 na coluna 35 do arquivo jogador.cpp. E o erro é que o compilador estava esperando um ";" antes do "this" da linha 11.
+
+	```Shell
+	$ make all
+	Building target using GCC compiler: source/data.cpp
+	g++ source/data.cpp -c -W -Wall       -o objects/data.o
+
+	Building target using GCC compiler: source/empresa.cpp
+	g++ source/empresa.cpp -c -W -Wall       -o objects/empresa.o
+
+	Building target using GCC compiler: source/jogador.cpp
+	g++ source/jogador.cpp -c -W -Wall       -o objects/jogador.o
+	source/jogador.cpp: In constructor 'Jogador::Jogador(std::string, Data, std::string, Categorias, float)':
+	source/jogador.cpp:10:35: error: expected ';' before 'this'
+	10 |  this->dataNascimento = nascimento
+	  |                                   ^
+	  |                                   ;
+	11 |  this->nacionalidade = nacionalidade;
+	  |  ~~~~
+	source/jogador.cpp:7:55: warning: unused parameter 'nacionalidade' [-Wunused-parameter]
+	7 | Jogador::Jogador(string nome, Data nascimento, string nacionalidade, Categorias categoria, float salarioBruto){
+	  |                                                ~~~~~~~^~~~~~~~~~~~~
+	make: *** [objects/jogador.o] Error 1
 	```
 
 
