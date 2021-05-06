@@ -8,12 +8,13 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
    - Desenvolver um método para calcular a idade do jogador.
    - Criar um método para mostrar quanto tempo falta para o jogador se aposentar.
    - Construir um método para calcular o salário líquido. Para calcular o salário líquido, deve-se descontar o valor de INSS e o Valor de Imposto Retido na conta. Para isso, considere a tabela a seguir:
-	
-	|   FAIXA SALARIAL     |  INSS  | IRRF  |
-	| :---                 |  :---: | :---: |
-	| ATÉ R$ 1100,00       |   7.5% |   0%  |
-	| ATÉ R$ 2000,00       |     9% | 7.5%  |
-    | ATÉ R$ 3100,00       |    12% |  15%  |
-    | ATÉ R$ 4.100,00      |    14% |  22%  |
-    | ACIMA DE R$ 4.100,00 |    14% |  27%  |
+   
+   
+   - |   FAIXA SALARIAL     |  INSS  | IRRF  |
+ 	 | :---                 |  :---: | :---: |
+     | ATÉ R$ 1100,00       |   7.5% |   0%  |
+	 | ATÉ R$ 2000,00       |     9% | 7.5%  |
+	 | ATÉ R$ 3100,00       |    12% |  15%  |
+	 | ATÉ R$ 4.100,00      |    14% |  22%  |
+	 | ACIMA DE R$ 4.100,00 |    14% |  27%  |
 
