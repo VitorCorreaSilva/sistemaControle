@@ -25,7 +25,7 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 	 | ATÉ R$ 4.100,00      |    14% |  22%  |
 	 | ACIMA DE R$ 4.100,00 |    14% |  27%  |
 
-2. Criar classe para representar um `Time`
+2. Criar classe para representar um `Time`  e esta classe deve:
    - Implementar os atributos:
       - Nome
       - Id (Esta é uma informação única e gerada automaticamente)
