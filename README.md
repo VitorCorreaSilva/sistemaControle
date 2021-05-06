@@ -3,7 +3,7 @@ Este projeto foi criado para o trabalho A3 da disciplina de Programação Orient
 
 ## O Desafio
 O desafio do exercicio é resolver todos os problemas propostos no enunciado do projeto disponibilizado pelo mestre do curso. Então, temos como objetivos:
-**1. Criar uma classe para representar um `Jogador` e esta classe deve:**
+1. **Criar uma classe para representar um `Jogador` e esta classe deve:**
 	- Implementar os atributos:
 		- Nome
 		- Id (Esta é uma informação única e gerada automaticamente)
@@ -26,7 +26,7 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 		| ACIMA DE R$ 4.100,00 |    14% |  27%  |
 
 
-**2. Criar classe para representar um `Time`  e esta classe deve:**
+2. **Criar classe para representar um `Time`  e esta classe deve:**
 	- Implementar os atributos:
 		- Nome
 		- Id (Esta é uma informação única e gerada automaticamente)
@@ -37,7 +37,7 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 	- Criar um relatório financeiro para apresentar o nome de todos os jogadores ativos do time, seu respectivo salário bruto e líquido
 
 
-**3. Crie uma classe que represente uma `Empresa`. Esta classe será responsável por gerenciar vários times, com os atributos que julgar conveniente. Ela deve:**
+3. **Crie uma classe que represente uma `Empresa`. Esta classe será responsável por gerenciar vários times, com os atributos que julgar conveniente. Ela deve:**
 	- Implementar uma consulta de jogador que pode receber um nome ou ID e apresentar de qual time o jogador faz parte, seus dados pessoais(nome/idade), seu salário bruto e líquido
 	- Desenvolver um método para listar os jogadores. Similar ao método anterior, apresenta uma lista com todos os jogadores que fazem parte da empresa
 	- Criar um relatório financeiro. Para cada time gerenciado pela empresa, apresentar o relatóriocontendo os custos totais de cada time, destacando:
