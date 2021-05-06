@@ -3,10 +3,17 @@ Este projeto foi criado para o trabalho A3 da disciplina de Programação Orient
 
 ## O Desafio
 O desafio do exercicio é resolver todos os problemas propostos no enunciado do projeto disponibilizado pelo mestre do curso. Então, temos como objetivos:
-1. Criar uma classe para representar um `Jogador`
-   - Implementar Getters e Setters para todos os atributos.
-   - Desenvolver um método para calcular a idade do jogador.
-   - Criar um método para mostrar quanto tempo falta para o jogador se aposentar.
+1. Criar uma classe para representar um `Jogador` e esta classe deve:
+   - Implementar os atributos:
+      - Nome
+      - Id (Esta é uma informação única e gerada automaticamente)
+      - Data de nascimento
+      - Nacionalidade
+      - Categoria de Atuação (Profissional/Base)
+      - Salário bruto mensal
+   - Fazer Getters e Setters para todos os atributos
+   - Desenvolver um método para calcular a idade do jogador
+   - Criar um método para mostrar quanto tempo falta para o jogador se aposentar
    - Construir um método para calcular o salário líquido. Para calcular o salário líquido, deve-se descontar o valor de INSS e o Valor de Imposto Retido na conta. Para isso, considere a tabela a seguir:
    
 
@@ -18,3 +25,12 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 	 | ATÉ R$ 4.100,00      |    14% |  22%  |
 	 | ACIMA DE R$ 4.100,00 |    14% |  27%  |
 
+2. Criar classe para representar um `Time`
+   - Implementar os atributos:
+      - Nome
+      - Id (Esta é uma informação única e gerada automaticamente)
+      - Categoria (Profissional/Base)
+      - Conjunto de jogadores que fazem parte do time
+   - Fazer Getters e Setters para todos os atributos
+   - Desenvolver um relatório geral que apresente o nome do time e os dados de todos os seus jogadores
+   -  Criar um relatório financeiro para apresentar o nome de todos os jogadores ativos do time, seu respectivo salário bruto e líquido
