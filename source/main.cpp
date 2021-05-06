@@ -22,36 +22,54 @@ int main(){
 
 	//Time(string nome, Categorias categoria);
 	Time t1("desenvolvedores futebol clube", PROFISSIONAL);
+
+	Time t2("atletico clube vacionados", BASE);
+	
+	Time t3("unidos contra covid", PROFISSIONAL);
+
+	//Empresa(string nome);
+	Empresa empresa("UNIRITTER SPORTS");
+
 	t1.adicionarJogador(j1);
 	t1.adicionarJogador(j2);
 	t1.adicionarJogador(j3);
 	t1.adicionarJogador(j4);
 	t1.adicionarJogador(j5);
 
-	Time t2("atletico clube vacionados", BASE);
 	t2.adicionarJogador(j6);
 	t2.adicionarJogador(j7);
 	t2.adicionarJogador(j8);
 	t2.adicionarJogador(j9);
 	t2.adicionarJogador(j10);
 
-	Time t3("unidos contra covid", PROFISSIONAL);
 	t3.adicionarJogador(j11);
 	t3.adicionarJogador(j12);
 	t3.adicionarJogador(j13);
 	t3.adicionarJogador(j14);
 	t3.adicionarJogador(j15);
 
-	//Empresa(string nome);
-	Empresa empresa("UNIRITTER SPORTS");
 	empresa.adicionarTime(t1);
 	empresa.adicionarTime(t2);
 	empresa.adicionarTime(t3);
+
+
+	
+	//cout << j1.calcularIdade(j1.getDataNascimento()) << endl;
+	//j1.setIdadeAposentadoria(38);	
+	//cout << j1.calcularTempoAposentadoria(j1.getIdadeAposentadoria()) << endl;
+	//cout << j1.calcularSalarioLiquido(j1.getSalarioBruto()) << endl;
+
+	//t1.relatorioGeral();
+	//t1.relatorioFinanceiro();
 
 	//empresa.consultarJogador("francisco");
 	//empresa.consultarJogador(7);
 	//empresa.listaJogadores();
 	empresa.relatorioFinanceiro();
+
+	
+
+
 
 	return 0;
 }

@@ -37,6 +37,10 @@ float Jogador::getSalarioBruto(){
 	return salarioBruto;
 }
 
+int Jogador::getIdadeAposentadoria(){
+	return idadeAposentadoria;
+}
+
 void Jogador::setNome(string n){
 	nome = n;
 }
@@ -59,6 +63,10 @@ void Jogador::setCategoria(Categorias cat){
 
 void Jogador::setSalarioBruto(float salario){
 	salarioBruto = salario;
+}
+
+void Jogador::setIdadeAposentadoria(int idadeAposentadoria){
+	this->idadeAposentadoria = idadeAposentadoria;
 }
 
 float Jogador::calcularSalarioLiquido(float salarioBruto){
@@ -134,9 +142,9 @@ int Jogador::calcularIdade(Data dataNascimento){
 	return idade;
 }
 
-int Jogador::calcularTempoAposentadoria(Data dataNascimento){
+int Jogador::calcularTempoAposentadoria(int idadeAposentadoria){
 	int idade =  calcularIdade(dataNascimento);
-	return IDADE_APOSENTADORIA - idade;
+	return idadeAposentadoria - idade;
 }
 
 void Jogador::mostrarDados(){
