@@ -44,3 +44,6 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 		- Valor a ser pago em salários
 		- Valor a ser destinado ao INSS
 		- Valor retido a ser pago ao imposto de renda
+
+##A Estrutura
+A estrutura do projeto conta com um diretório chamado `source` onde estão todos os arquivos com código escrito. Dentro deste foram criados arquivos de cabeçalho no formato `.hpp`. Estes contém todas as definições das classes que usamos no código.E também foram criados os arquivos `.cpp` onde esta a implementação das funções definidas anteriormente. No momento em que o build é executado será criado um novo diretório na pasta raiz do projeto chamado `objects` e o arquivo da aplicação chamado `sistemaControle.exe`.
