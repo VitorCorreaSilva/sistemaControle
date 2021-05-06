@@ -65,7 +65,7 @@ int main(){
 	//empresa.consultarJogador("francisco");
 	//empresa.consultarJogador(7);
 	//empresa.listaJogadores();
-	empresa.relatorioFinanceiro();
+	//empresa.relatorioFinanceiro();
 
 	
 

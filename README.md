@@ -1,5 +1,5 @@
 # Sistema de controle para times esportivos
-Este repositório foi criado e editado por mim para o trabalho A3 da disciplina de Programação Orientada a Objetos ministrada pelo professor [Vinicius Cassol](https://github.com/vinicassol) do curso de Ciência da Computação da Universidade Ritter dos Reis. O objetivo é desenvolver um sistema simples de controle para times esportivos em C++ aplicando os conceitos e técnicas que aprendemos em aula.
+Este repositório foi criado e editado por mim para o trabalho A3 da disciplina de Programação Orientada a Objetos ministrada pelo professor [Vinicius Cassol](https://github.com/vinicassol) do curso de Ciência da Computação da Universidade Ritter dos Reis. O objetivo é desenvolver um sistema simples de controle para times esportivos em C++ aplicando os conceitos e técnicas que aprendemos em aula. Segue também [Link Video](https://youtu.be/fBeSjD7HrCo) com algumas explicações do funcionamento.
 
 
 ## O Desafio
