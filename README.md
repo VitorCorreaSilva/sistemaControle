@@ -53,5 +53,10 @@ Para executar o build e gerar os binários do projeto sem muitas complicações 
 - `make all`: esse método executa as intruções para compilação e gera os binários e o executável do projeto. Para executar basta estar no diretório que esta o `makefile` e digitar make.
 
 ```Shell
-	$ make all
+# User@Computer .../sistemaControle
+$ make all
+# User@Computer .../sistemaControle
+Building binary using GCC linker: sistemaControle
+g++ objects/data.o objects/empresa.o objects/jogador.o objects/main.o objects/time.o -o sistemaControle
+Finished building binary: sistemaControle
 ```
