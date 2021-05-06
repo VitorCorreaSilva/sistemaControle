@@ -46,4 +46,12 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 		- Valor retido a ser pago ao imposto de renda
 
 ## A Estrutura
-A estrutura do projeto conta com um diretório chamado `source` onde estão todos os arquivos com código escrito. Dentro deste foram criados arquivos de cabeçalho no formato `.hpp`. Estes contém todas as definições das classes que usamos no código.E também foram criados os arquivos `.cpp` onde esta a implementação das funções definidas anteriormente. No momento em que o build é executado será criado um novo diretório na pasta raiz do projeto chamado `objects` e o arquivo da aplicação chamado `sistemaControle.exe`.
+A estrutura do projeto conta com um diretório chamado `source/` onde estão todos os arquivos com código escrito. Dentro deste foram criados arquivos de cabeçalho no formato `.hpp`. Estes contém todas as definições das classes que usamos no código. E também foram criados os arquivos `.cpp` onde esta a implementação das funções definidas anteriormente. No momento em que o build é executado será também criado um novo diretório na pasta raiz do projeto chamado `objects/` e o arquivo da aplicação chamado `sistemaControle.exe`.
+
+## O Build
+Para executar o build e gerar os binários do projeto sem muitas complicações foi implementado um arquivo `makefile`. Tivemos como base esta [documentação](https://www.gnu.org/software/make/manual/make.html). Nesse arquivo existem dois métodos, são:
+- `make all`: esse método executa as intruções para compilação e gera os binários e o executável do projeto. Para executar basta estar no diretório que esta o `makefile` e digitar make.
+
+```Shell
+	$ make all
+```
