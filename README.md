@@ -3,7 +3,7 @@ Este projeto foi criado para o trabalho A3 da disciplina de Programação Orient
 
 ## O Desafio
 O desafio do exercicio é resolver todos os problemas propostos no enunciado do projeto disponibilizado pelo mestre do curso. Então, temos como objetivos:
-1. Criar uma classe para representar um `Jogador` e esta classe deve:
+###1. Criar uma classe para representar um `Jogador` e esta classe deve:
    - Implementar os atributos:
       - Nome
       - Id (Esta é uma informação única e gerada automaticamente)
@@ -25,7 +25,7 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 	 | ATÉ R$ 4.100,00      |    14% |  22%  |
 	 | ACIMA DE R$ 4.100,00 |    14% |  27%  |
 
-2. Criar classe para representar um `Time`  e esta classe deve:
+###2. Criar classe para representar um `Time`  e esta classe deve:
    - Implementar os atributos:
       - Nome
       - Id (Esta é uma informação única e gerada automaticamente)
