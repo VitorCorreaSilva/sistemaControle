@@ -50,27 +50,32 @@ A estrutura do projeto conta com um diretório chamado `source/` onde estão tod
 
 ## O Build
 Para executar o build e gerar os binários do projeto sem muitas complicações foi implementado um arquivo `makefile`. Tivemos como base esta [documentação](https://www.gnu.org/software/make/manual/make.html). Nesse arquivo existem dois métodos, são:
-- `make all`: esse método executa as intruções para compilação e gera os binários e o executável do projeto. Para executar basta estar no diretório que esta o `makefile` e digitar make.
+- `make all`: esse método executa as instruções para compilação e gera os binários e o executável do projeto. Para executar basta estar no diretório que esta o `makefile` e digitar make all conforme abaixo.
 
-```Shell
-# User@Computer .../sistemaControle
-$ make all
-Building target using GCC compiler: source/data.cpp
-g++ source/data.cpp -c -W -Wall       -o objects/data.o
-
-Building target using GCC compiler: source/empresa.cpp
-g++ source/empresa.cpp -c -W -Wall       -o objects/empresa.o
-
-Building target using GCC compiler: source/jogador.cpp
-g++ source/jogador.cpp -c -W -Wall       -o objects/jogador.o
-
-Building target using GCC compiler: source/main.cpp
-g++ source/main.cpp -c -W -Wall       -o objects/main.o
-
-Building target using GCC compiler: source/time.cpp
-g++ source/time.cpp -c -W -Wall       -o objects/time.o
-
-Building binary using GCC linker: sistemaControle
-g++ objects/data.o objects/empresa.o objects/jogador.o objects/main.o objects/time.o -o sistemaControle
-Finished building binary: sistemaControle
-```
+	```Shell
+	# User@Computer .../sistemaControle
+	$ make all
+	Building target using GCC compiler: source/data.cpp
+	g++ source/data.cpp -c -W -Wall       -o objects/data.o
+	```
+	```Shell
+	Building target using GCC compiler: source/empresa.cpp
+	g++ source/empresa.cpp -c -W -Wall       -o objects/empresa.o
+	```
+	```Shell
+	Building target using GCC compiler: source/jogador.cpp
+	g++ source/jogador.cpp -c -W -Wall       -o objects/jogador.o
+	```
+	```Shell
+	Building target using GCC compiler: source/main.cpp
+	g++ source/main.cpp -c -W -Wall       -o objects/main.o
+	```
+	```Shell
+	Building target using GCC compiler: source/time.cpp
+	g++ source/time.cpp -c -W -Wall       -o objects/time.o
+	```
+	```Shell
+	Building binary using GCC linker: sistemaControle
+	g++ objects/data.o objects/empresa.o objects/jogador.o objects/main.o objects/time.o -o sistemaControle
+	Finished building binary: sistemaControle
+	```
