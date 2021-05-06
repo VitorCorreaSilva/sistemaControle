@@ -76,9 +76,10 @@ Para executar o build e gerar os binários do projeto sem muitas complicações 
 	```
 
 
-Se algum erro de compilação acontecer o gcc informará o arquivo a linha e coluna onde o erro aconteceu e qual foi o erro. Nesse caso o erro esta na linha 10 na coluna 35 do arquivo jogador.cpp. E o erro é que o compilador estava esperando um ";" antes do "this" da linha 11.
+	Se algum erro de compilação acontecer o gcc informará o arquivo, a linha, coluna onde o erro aconteceu e qual foi o erro. Nesse caso o erro esta na linha 10, na coluna 35 do arquivo jogador.cpp. E o erro que acontece é a falta de um ";" antes do "this" da linha 11.
 
 	```Shell
+	# User@Computer .../sistemaControle
 	$ make all
 	Building target using GCC compiler: source/data.cpp
 	g++ source/data.cpp -c -W -Wall       -o objects/data.o
