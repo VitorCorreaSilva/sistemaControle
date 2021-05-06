@@ -1,6 +1,7 @@
 # Sistema de controle para times esportivos
 Este projeto foi criado para o trabalho A3 da disciplina de Programação Orientada a Objetos ministrada pelo professor [Vinicius Cassol](https://github.com/vinicassol) do curso de Ciência da Computação da Universidade Ritter dos Reis. O objetivo é desenvolver um sistema simples de controle para times esportivos em C++ aplicando os conceitos e técnicas que aprendemos em aula.
 
+
 ## O Desafio
 O desafio do exercicio é resolver todos os problemas propostos no enunciado do projeto disponibilizado pelo mestre do curso. Então, temos como objetivos:
 1. **Criar uma classe para representar um `Jogador` e esta classe deve:**
@@ -40,17 +41,19 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 3. **Crie uma classe que represente uma `Empresa`. Esta classe será responsável por gerenciar vários times, com os atributos que julgar conveniente. Ela deve:**
 	- Implementar uma consulta de jogador que pode receber um nome ou ID e apresentar de qual time o jogador faz parte, seus dados pessoais(nome/idade), seu salário bruto e líquido
 	- Desenvolver um método para listar os jogadores. Similar ao método anterior, apresenta uma lista com todos os jogadores que fazem parte da empresa
-	- Criar um relatório financeiro. Para cada time gerenciado pela empresa, apresentar o relatóriocontendo os custos totais de cada time, destacando:
+	- Criar um relatório financeiro. Para cada time gerenciado pela empresa, apresentar o relatório contendo os custos totais de cada time, destacando:
 		- Valor a ser pago em salários
 		- Valor a ser destinado ao INSS
 		- Valor retido a ser pago ao imposto de renda
 
+
 ## A Estrutura
 A estrutura do projeto conta com um diretório chamado `source/` onde estão todos os arquivos com código escrito. Dentro deste foram criados arquivos de cabeçalho no formato `.hpp`. Estes contém todas as definições das classes que usamos no código. E também foram criados os arquivos `.cpp` onde esta a implementação das funções definidas anteriormente. No momento em que o build é executado será também criado um novo diretório na pasta raiz do projeto chamado `objects/` e o arquivo da aplicação chamado `sistemaControle.exe`.
 
+
 ## O Build
-Para executar o build e gerar os binários do projeto sem muitas complicações foi implementado um arquivo `makefile`. Tivemos como base esta [documentação](https://www.gnu.org/software/make/manual/make.html). Nesse arquivo existem dois métodos, são:
-- `make all`: esse método executa as instruções para compilação e gera os binários e o executável do projeto. Para executar basta estar no mesmo diretório do arquivo `makefile` e digitar make all conforme abaixo. 
+Para executar o build que gera os binários e o executavel do projeto sem muitas complicações foi implementado um arquivo `makefile`. Ele foi desenvolvido com base nesta [documentação](https://www.gnu.org/software/make/manual/make.html). Nesse arquivo foram criado os seguintes métodos:
+- `make all`: executa as instruções para compilação e gera os binários e o executável do projeto. Para executar basta estar no mesmo diretório do arquivo `makefile` e digitar `make all` conforme abaixo. 
 
 	```Shell
 	# User@Computer .../sistemaControle
@@ -76,7 +79,7 @@ Para executar o build e gerar os binários do projeto sem muitas complicações 
 	```
 
 
-	Se algum erro de compilação acontecer o gcc informará o arquivo, a linha, coluna onde o erro aconteceu e qual foi o erro. Nesse caso o erro esta na linha 10, na coluna 35 do arquivo jogador.cpp. E o erro que acontece é a falta de um ";" antes do "this" da linha 11.
+	Se algum erro de compilação acontecer o gcc informará o arquivo, a linha, a coluna onde o erro aconteceu e qual foi o erro. Nesse caso o erro esta na linha 10, na coluna 35 do arquivo jogador.cpp. E o erro que acontece é a falta de um ";" antes do "this" da linha 11.
 
 	```Shell
 	# User@Computer .../sistemaControle
@@ -103,10 +106,13 @@ Para executar o build e gerar os binários do projeto sem muitas complicações 
 	```
 
 
-- `make clean`: Este método serve para limpar os arquivos dos ultimos builds e não possui um retorno quando tem sucesso. É aconselhavel sempre executar antes de um `make all` para garantir que todos os arquivos serão compilados novamente. Segue exemplo abaixo.
+- `make clean`: Serve para limpar os arquivos dos ultimos builds e não possui um retorno quando tem sucesso. É aconselhavel sempre executar antes de um `make all` para garantir que todos os arquivos serão compilados novamente. Para a execução devemos estar no mesmo diretório do arquivo `makefile`  e digitar `make clean` conforme código abaixo.
 
 	```Shell
 	# User@Computer .../sistemaControle
 	$ make clean
 
 	```
+
+
+## O Build
