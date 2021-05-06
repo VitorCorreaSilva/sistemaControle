@@ -1,9 +1,9 @@
 # Sistema de controle para times esportivos
-Este projeto foi criado para o trabalho A3 da disciplina de Programação Orientada a Objetos ministrada pelo professor Vinicius Cassol da Universidade Ritter dos Reis. O objetivo é desenvolver um sistema simples de controle para times esportivos em C++ aplicando os conceitos e técnicas que aprendemos em aula.
+Este projeto foi criado para o trabalho A3 da disciplina de Programação Orientada a Objetos ministrada pelo professor [Vinicius Cassol](https://github.com/vinicassol) do curso de Ciência da Computação da Universidade Ritter dos Reis. O objetivo é desenvolver um sistema simples de controle para times esportivos em C++ aplicando os conceitos e técnicas que aprendemos em aula.
 
 ## O Desafio
 O desafio do exercicio é resolver todos os problemas propostos no enunciado do projeto disponibilizado pelo mestre do curso. Então, temos como objetivos:
-1. Criar uma classe para representar um `Jogador` e esta classe deve:
+**1. Criar uma classe para representar um `Jogador` e esta classe deve:**
 	- Implementar os atributos:
 		- Nome
 		- Id (Esta é uma informação única e gerada automaticamente)
@@ -17,15 +17,16 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 	- Construir um método para calcular o salário líquido. Para calcular o salário líquido, deve-se descontar o valor de INSS e o Valor de Imposto Retido na conta. Para isso, considere a tabela a seguir:
    
 
-	|   FAIXA SALARIAL     |  INSS  | IRRF  |
-	| :---                 |  :---: | :---: |
-	| ATÉ R$ 1100,00       |   7.5% |   0%  |
-	| ATÉ R$ 2000,00       |     9% | 7.5%  |
-	| ATÉ R$ 3100,00       |    12% |  15%  |
-	| ATÉ R$ 4.100,00      |    14% |  22%  |
-	| ACIMA DE R$ 4.100,00 |    14% |  27%  |
+		|   FAIXA SALARIAL     |  INSS  | IRRF  |
+		| :---                 |  :---: | :---: |
+		| ATÉ R$ 1100,00       |   7.5% |   0%  |
+		| ATÉ R$ 2000,00       |     9% | 7.5%  |
+		| ATÉ R$ 3100,00       |    12% |  15%  |
+		| ATÉ R$ 4.100,00      |    14% |  22%  |
+		| ACIMA DE R$ 4.100,00 |    14% |  27%  |
 
-2. Criar classe para representar um `Time`  e esta classe deve:
+
+**2. Criar classe para representar um `Time`  e esta classe deve:**
 	- Implementar os atributos:
 		- Nome
 		- Id (Esta é uma informação única e gerada automaticamente)
@@ -35,7 +36,8 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 	- Desenvolver um relatório geral que apresente o nome do time e os dados de todos os seus jogadores
 	- Criar um relatório financeiro para apresentar o nome de todos os jogadores ativos do time, seu respectivo salário bruto e líquido
 
-3. Crie uma classe que represente uma `Empresa`. Esta classe será responsável por gerenciar vários times, com os atributos que julgar conveniente. Ela deve:
+
+**3. Crie uma classe que represente uma `Empresa`. Esta classe será responsável por gerenciar vários times, com os atributos que julgar conveniente. Ela deve:**
 	- Implementar uma consulta de jogador que pode receber um nome ou ID e apresentar de qual time o jogador faz parte, seus dados pessoais(nome/idade), seu salário bruto e líquido
 	- Desenvolver um método para listar os jogadores. Similar ao método anterior, apresenta uma lista com todos os jogadores que fazem parte da empresa
 	- Criar um relatório financeiro. Para cada time gerenciado pela empresa, apresentar o relatóriocontendo os custos totais de cada time, destacando:
