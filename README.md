@@ -55,7 +55,21 @@ Para executar o build e gerar os binários do projeto sem muitas complicações 
 ```Shell
 # User@Computer .../sistemaControle
 $ make all
-# User@Computer .../sistemaControle
+Building target using GCC compiler: source/data.cpp
+g++ source/data.cpp -c -W -Wall       -o objects/data.o
+
+Building target using GCC compiler: source/empresa.cpp
+g++ source/empresa.cpp -c -W -Wall       -o objects/empresa.o
+
+Building target using GCC compiler: source/jogador.cpp
+g++ source/jogador.cpp -c -W -Wall       -o objects/jogador.o
+
+Building target using GCC compiler: source/main.cpp
+g++ source/main.cpp -c -W -Wall       -o objects/main.o
+
+Building target using GCC compiler: source/time.cpp
+g++ source/time.cpp -c -W -Wall       -o objects/time.o
+
 Building binary using GCC linker: sistemaControle
 g++ objects/data.o objects/empresa.o objects/jogador.o objects/main.o objects/time.o -o sistemaControle
 Finished building binary: sistemaControle
