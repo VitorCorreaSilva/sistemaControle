@@ -103,7 +103,7 @@ Para executar o build e gerar os binários do projeto sem muitas complicações 
 	```
 
 
-- `make clean`:
+- `make clean`: Este método serve para limpar os arquivos dos ultimos builds e não possui um retorno quando tem sucesso. É aconselhavel sempre executar antes de um `make all` para garantir que todos os arquivos serão compilados novamente. Segue exemplo abaixo.
 
 	```Shell
 	# User@Computer .../sistemaControle
